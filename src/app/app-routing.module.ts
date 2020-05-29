@@ -1,9 +1,9 @@
 import { NgModule } from '@angular/core';
-import { Routes, RouterModule } from '@angular/router';
 import { CourseListComponent } from './course-list/course-list.component';
 import { UpdateCourseComponent } from './update-course/update-course.component';
 import { CourseDetailsComponent } from './course-details/course-details.component';
 import { AddCourseComponent } from './add-course/add-course.component';
+import { RouterModule, Routes } from '@angular/router';
 
 const routes: Routes = [
   { path: '', redirectTo: 'course', pathMatch: 'full' },

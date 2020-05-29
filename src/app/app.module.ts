@@ -7,6 +7,7 @@ import { AddCourseComponent } from './add-course/add-course.component';
 import { CourseDetailsComponent } from './course-details/course-details.component';
 import { CourseListComponent } from './course-list/course-list.component';
 import { UpdateCourseComponent } from './update-course/update-course.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { UpdateCourseComponent } from './update-course/update-course.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

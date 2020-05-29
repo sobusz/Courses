@@ -1,4 +1,3 @@
-import { CourseDetailsComponent } from '../course-details/course-details.component';
 import { Observable } from "rxjs";
 import { CourseService } from "../course.service";
 import { Course } from "../course";
