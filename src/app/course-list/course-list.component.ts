@@ -38,6 +38,6 @@ export class CourseListComponent implements OnInit {
   }
 
   updateCourse(id: number){
-    this.router.navigate(['course', id]);
+    this.router.navigate(['update', id]);
   }
 }
