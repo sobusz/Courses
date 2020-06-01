@@ -1,4 +1,4 @@
-<div class="panel panel-primary">
+<!-- <div class="panel panel-primary">
     <div class="panel-heading">
       <h2>Course List</h2>
     </div>
@@ -31,4 +31,37 @@
         </tbody>
       </table>
     </div>
+  </div> -->
+
+  <div class="form-group">
+    <input type="text" class="form-control" placeholder="Search Here" [(ngModel)]="term">
   </div>
+  
+  <table class="table">
+    <thead>
+        <tr>
+          <th>Name</th>
+          <!-- <th>Author</th> -->
+          <th>Technologies</th>
+          <th>Level</th>
+          <!-- <th>Number of lessons</th>
+          <th>Duration</th> -->
+          <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let c of course |async | filter:term">
+          <td>{{c.name}}</td>
+          <!-- <td>{{c.author}}</td> -->
+          <td>{{c.technologies}}</td>
+          <td>{{c.level}}</td>
+          <!-- <td>{{c.numberOfLessons}}</td>
+          <td>{{c.duration}}</td> -->
+          <td>
+            <button (click)="courseDetails(c.id)" class="btn btn-info" style="margin-left: 10px">Details</button>
+            <button (click)="updateCourse(c.id)" class="btn btn-info" style="margin-left: 10px">Update</button>
+            <button (click)="deleteCourse(c.id)" class="btn btn-danger" style="margin-left: 10px">Delete</button>
+        </td>
+        </tr>
+    </tbody>
+  </table>

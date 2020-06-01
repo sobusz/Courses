@@ -8,6 +8,8 @@ import { CourseDetailsComponent } from './course-details/course-details.componen
 import { CourseListComponent } from './course-list/course-list.component';
 import { UpdateCourseComponent } from './update-course/update-course.component';
 import { HttpClientModule } from '@angular/common/http';
+import { Ng2SearchPipeModule } from 'ng2-search-filter';
+
 
 @NgModule({
   declarations: [
@@ -21,9 +23,11 @@ import { HttpClientModule } from '@angular/common/http';
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    HttpClientModule
+    HttpClientModule,
+    Ng2SearchPipeModule
   ],
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {
+}

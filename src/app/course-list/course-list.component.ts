@@ -11,6 +11,8 @@ import { Router } from '@angular/router';
 })
 export class CourseListComponent implements OnInit {
   course: Observable<Course[]>;
+  term: string;
+
 
   constructor(private courseService: CourseService,
     private router: Router) {}
