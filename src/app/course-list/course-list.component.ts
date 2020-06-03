@@ -39,6 +39,10 @@ export class CourseListComponent implements OnInit {
     this.router.navigate(['details', id]);
   }
 
+  watchCourse(id: number){
+    this.router.navigate(['player', id]);
+  }
+
   updateCourse(id: number){
     this.router.navigate(['update', id]);
   }

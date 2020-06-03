@@ -30,4 +30,8 @@ export class CourseService {
   getCoursesList(): Observable<any> {
     return this.http.get(`${this.baseUrl}`);
   }
+
+  watchCourse(id: number): Observable<any> {
+    return this.http.get(`${this.baseUrl}/${id}`);
+  }
 }

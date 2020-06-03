@@ -7,6 +7,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { RegisterComponent } from './register/register.component';
 import { LoginComponent } from './login/login.component';
 import { HomeComponent } from './home/home.component';
+import { PlayerComponent } from './player/player.component';
 
 const routes: Routes = [
   { path: '', redirectTo: 'home', pathMatch: 'full' },
@@ -17,6 +18,7 @@ const routes: Routes = [
   { path: 'register', component: RegisterComponent},
   { path: 'authenticate', component: LoginComponent},
   { path: 'home', component: HomeComponent},
+  { path: 'player/:id', component: PlayerComponent},
 ];
 
 @NgModule({

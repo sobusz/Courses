@@ -12,7 +12,8 @@ import { Ng2SearchPipeModule } from 'ng2-search-filter';
 import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
 import { HomeComponent } from './home/home.component';
-
+import { YouTubePlayerModule } from "@angular/youtube-player";
+import { PlayerComponent } from './player/player.component';
 
 @NgModule({
   declarations: [
@@ -23,14 +24,16 @@ import { HomeComponent } from './home/home.component';
     UpdateCourseComponent,
     LoginComponent,
     RegisterComponent,
-    HomeComponent
+    HomeComponent,
+    PlayerComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
     HttpClientModule,
-    Ng2SearchPipeModule
+    Ng2SearchPipeModule,
+    YouTubePlayerModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
