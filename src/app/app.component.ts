@@ -9,4 +9,8 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'Courses';
   term: string;
+
+  constructor(){
+    document.body.style.background = '#ecf0f1';
+  }
 }
