@@ -29,6 +29,18 @@ export class CourseDetailsComponent implements OnInit {
       }, error => console.log(error));
   }
 
+  deleteCourse(id: number) {
+    this.courseService.deleteCourse(id)
+      .subscribe(
+        data => {
+          console.log(data);
+        },
+        error => console.log(error));
+  }
+  updateCourse(id: number){
+    this.router.navigate(['update', id]);
+  }
+
   list(){
     this.router.navigate(['courses']);
   }

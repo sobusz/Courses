@@ -25,16 +25,6 @@ export class CourseListComponent implements OnInit {
     this.course = this.courseService.getCoursesList();
   }
 
-  deleteCourse(id: number) {
-    this.courseService.deleteCourse(id)
-      .subscribe(
-        data => {
-          console.log(data);
-          this.reloadData();
-        },
-        error => console.log(error));
-  }
-
   courseDetails(id: number){
     this.router.navigate(['details', id]);
   }
@@ -43,7 +33,5 @@ export class CourseListComponent implements OnInit {
     this.router.navigate(['player', id]);
   }
 
-  updateCourse(id: number){
-    this.router.navigate(['update', id]);
-  }
+  
 }

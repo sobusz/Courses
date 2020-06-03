@@ -24,14 +24,17 @@
 
         <div class="form-group">
             <label for="name">Number of lessons</label>
-            <input type="text" class="form-control" id="number" required [(ngModel)]="course.numberOfLessons" name="numberOfLessons">
+            <input type="number" class="form-control" id="number" required [(ngModel)]="course.numberOfLessons" name="numberOfLessons">
         </div>
 
         <div class="form-group">
             <label for="name">Duration</label>
-            <input type="text" class="form-control" id="duration" required [(ngModel)]="course.duration"
-                name="duration">
+            <input type="number" class="form-control" id="duration" required [(ngModel)]="course.duration" name="duration">
         </div>
+        <div class="form-group">
+            <label for="name">YouTube Video ID</label>
+            <input type="text" class="form-control" id="coverPhoto" required [(ngModel)]="course.coverPhoto" name="coverPhoto">
+          </div>
 
         <button type="submit" class="btn btn-success">Submit</button>
     </form>
