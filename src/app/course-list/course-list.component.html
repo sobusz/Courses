@@ -51,6 +51,7 @@
     </thead>
     <tbody>
         <tr *ngFor="let c of course |async | filter:term">
+          <img src="https://img.youtube.com/vi/{{c.coverPhoto}}/default.jpg"(click)="watchCourse(c.id)">
           <td>{{c.name}}</td>
           <!-- <td>{{c.author}}</td> -->
           <td>{{c.technologies}}</td>
