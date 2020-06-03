@@ -2,3 +2,15 @@
     display: flex;
     justify-content: center;
   }
+  img{
+    object-fit: cover;
+    width: 200px;
+    height: 40px;
+  }
+  a{
+    margin: 0;
+    padding: 0;
+  }
+  .move_down{
+    padding-top: 8px;
+  }
