@@ -9,6 +9,9 @@ import { CourseListComponent } from './course-list/course-list.component';
 import { UpdateCourseComponent } from './update-course/update-course.component';
 import { HttpClientModule } from '@angular/common/http';
 import { Ng2SearchPipeModule } from 'ng2-search-filter';
+import { LoginComponent } from './login/login.component';
+import { RegisterComponent } from './register/register.component';
+import { HomeComponent } from './home/home.component';
 
 
 @NgModule({
@@ -17,7 +20,10 @@ import { Ng2SearchPipeModule } from 'ng2-search-filter';
     AddCourseComponent,
     CourseDetailsComponent,
     CourseListComponent,
-    UpdateCourseComponent
+    UpdateCourseComponent,
+    LoginComponent,
+    RegisterComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
